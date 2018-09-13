@@ -15,7 +15,7 @@
         },
         "aksClusterName": {
             "type": "string",
-            "defaultValue": "myakscluster",
+            "defaultValue": "cbcorecluster",
             "metadata": {
                 "description": "The name of the Managed Cluster resource."
             }
@@ -35,7 +35,7 @@
             }
         },
         "aksAgentCount": {
-            "defaultValue": 3,
+            "defaultValue": 2,
             "minValue": 1,
             "maxValue": 50,
             "type": "int",
@@ -65,7 +65,7 @@
             }
         },        
         "location": {
-            "defaultValue": "westus2",
+            "defaultValue": "[resourceGroup().location]",
             "type": "string",
             "metadata": {
                 "description": "resources location."
@@ -99,7 +99,7 @@
             "metadata": {
                 "description": "The base URI where artifacts required by this template are located including a trailing '/'"
             },
-            "defaultValue": "https://raw.githubusercontent.com/SpektraSystems/core-azure-launcher/master/ACI"
+            "defaultValue": "https://raw.githubusercontent.com/SpektraSystems/CloudBees-Core-Azure-HOL/master/templates"
         },
         "_artifactsLocationSasToken": {
             "type": "securestring",
@@ -126,19 +126,7 @@
         "kubernetesVersion": "[parameters('kubernetesVersion')]",
         "tenantid": "[subscription().tenantId]"
     },
-    "resources": [{
-        "apiVersion": "2018-02-01",
-        "name": "pid-334853d2-1e00-4654-a187-c44268c847af",
-        "type": "Microsoft.Resources/deployments",
-        "properties": {
-            "mode": "Incremental",
-            "template": {
-                "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
-                "contentVersion": "1.0.0.0",
-                "resources": []
-            }
-        }
-    },  
+    "resources": [
         {
             "type": "Microsoft.ContainerService/managedClusters",
             "name": "[variables('aksClusterName')]",
