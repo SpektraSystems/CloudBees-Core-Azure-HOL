@@ -95,3 +95,6 @@ To make it easier for you to work on the labs, you are provided with pre-provisi
 ![alt text](Images/jen-master.jpg)
 
 
+Now you have a Jenkins Operations Center and Jenkins master ready to use. You can follow Jenkins documentation for further hands-on labs. 
+
+
