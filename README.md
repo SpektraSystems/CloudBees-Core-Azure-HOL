@@ -9,6 +9,7 @@ To make it easier for you to work on the labs, you are provided with pre-provisi
 ![alt text](Images/registration.png)
 
 * On the next page, click the **Launch Lab** button.
++
 ![alt text](Images/Launch-lab.jpg)
 
 * Wait for the lab environment to be provisioned. Sometimes this can take upto **10 minutes**. Once environment provisioning is complete, you will receive details in email as well as in the browser.
@@ -19,6 +20,15 @@ To make it easier for you to work on the labs, you are provided with pre-provisi
  
 * Login in azure portal,Launch cloud shell.
 ![alt text](Images/Launch_cloudshell.jpg)
+
+* In cloud shell click on **advanced settings**
+![alt text](Images/advanced_settings.jpg)
+
+* Choose existing RG, create new storage account and file, click on **create storage**
+![alt text](Images/storage_account.jpg)
+
+* Now you can see storage is successfully created.
+![alt text](Images/storage_created.jpg)
 
 * Run following command Connect to AKS Cluster via CloudShell or AZ CLI.
 ![alt text](Images/get-credential.jpg)
