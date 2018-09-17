@@ -9,7 +9,6 @@ To make it easier for you to work on the labs, you are provided with pre-provisi
 ![alt text](Images/registration.png)
 
 * On the next page, click the **Launch Lab** button.
-+
 ![alt text](Images/Launch-lab.jpg)
 
 * Wait for the lab environment to be provisioned. Sometimes this can take upto **10 minutes**. Once environment provisioning is complete, you will receive details in email as well as in the browser.
@@ -37,12 +36,21 @@ To make it easier for you to work on the labs, you are provided with pre-provisi
 ![alt text](Images/get-credential.jpg)
 
 * Run following command Verify deployments by ensure cjoc-0 pod is running. If status is creating etc, you should wait for about 2 minutes for completion
+     ```
+    kubectl get pods
+     ```
 ![alt text](Images/get-pods.jpg)
 
 * Run following command to find admin password of jenkins instance.
+     ```
+    kubectl exec cjoc-0 -- cat /var/jenkins_home/secrets/initialAdminPassword
+     ```
 ![alt text](Images/jenkins-password.jpg)
 
 * Run following command to find DNS name of CJOC, from this command you will get jenkins URL.
+     ```
+     kubectl get ingress
+    ```
 ![alt text](Images/jenkin-URL.jpg)
 
 * Now access the Jenkins URL in browser.
