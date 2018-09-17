@@ -33,25 +33,25 @@ To make it easier for you to work on the labs, you are provided with pre-provisi
     ```
     az aks get-credentials --resource-group myAKSCluster --name myAKSCluster
      ```
-![alt text](Images/get-credential.jpg)
+ ![alt text](Images/get-credential.jpg)
 
 * Run following command Verify deployments by ensure cjoc-0 pod is running. If status is creating etc, you should wait for about 2 minutes for completion
      ```
     kubectl get pods
      ```
-![alt text](Images/get-pods.jpg)
+ ![alt text](Images/get-pods.jpg)
 
 * Run following command to find admin password of jenkins instance.
      ```
     kubectl exec cjoc-0 -- cat /var/jenkins_home/secrets/initialAdminPassword
      ```
-![alt text](Images/jenkins-password.jpg)
+ ![alt text](Images/jenkins-password.jpg)
 
 * Run following command to find DNS name of CJOC, from this command you will get jenkins URL.
      ```
      kubectl get ingress
     ```
-![alt text](Images/jenkin-URL.jpg)
+ ![alt text](Images/jenkin-URL.jpg)
 
 * Now access the Jenkins URL in browser.
 ![alt text](Images/jenkins-url.jpg)
