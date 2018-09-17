@@ -16,8 +16,10 @@ To make it easier for you to work on the labs, you are provided with pre-provisi
 
  > Note: Lab environment is enabled only for specific duration or workshop end time - whichever is earlier. At the end of the allowed time, environment will be self-destructed.
  
- 
-* Login in azure portal,Launch cloud shell.
+* Open a browser instance in private or incognito mode and login to [Microsoft Azure Portal](https://portal.azure.com) using the credentials provided.Browse through azure portal find RG name and AKS cluster name.
+![alt text](Images/rg_name.jpg)
+
+* Launch cloud shell in azure portal.
 ![alt text](Images/Launch_cloudshell.jpg)
 
 * In cloud shell click on **advanced settings**
