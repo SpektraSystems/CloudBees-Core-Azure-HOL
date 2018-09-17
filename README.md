@@ -31,6 +31,9 @@ To make it easier for you to work on the labs, you are provided with pre-provisi
 ![alt text](Images/storage_created.jpg)
 
 * Run following command Connect to AKS Cluster via CloudShell or AZ CLI.
+    ```
+    az aks get-credentials --resource-group myAKSCluster --name myAKSCluster
+     ```
 ![alt text](Images/get-credential.jpg)
 
 * Run following command Verify deployments by ensure cjoc-0 pod is running. If status is creating etc, you should wait for about 2 minutes for completion
